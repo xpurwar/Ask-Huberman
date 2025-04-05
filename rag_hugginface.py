@@ -18,6 +18,7 @@ client = weaviate.connect_to_weaviate_cloud(
 )
 
 questions = client.collections.get("Question")
+# testing the vector database 
 # agg = questions.aggregate.over_all()
 # print(agg)
 # response = questions.query.fetch_objects(
@@ -28,9 +29,9 @@ questions = client.collections.get("Question")
 # print(response.objects[0].vector["default"])
 
 response = questions.generate.near_text(
-    query="anxiety",
+    query="what are 3 Tools for Optimizing Sleep & Sleep-Wake Timing",
     limit=1,
-    grouped_task="name three ways that andrew huberman mentions I can decrease anxiety"
+    grouped_task="what are 3 Tools for Optimizing Sleep & Sleep-Wake Timing"
 )
 
 print(response.generated)  # Inspect the generated text
