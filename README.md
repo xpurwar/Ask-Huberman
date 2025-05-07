@@ -11,7 +11,7 @@ his podcast, that answers questions based on what he has said said in his podcas
 - 🎙️ Transcribes entire YouTube episodes
 - 📄 Converts transcripts into structured, searchable text
 - 🧠 Uses Weaviate (vector database) to store and embed transcripts
-- 🤖 Leverages Cohere LLM to answer user queries via RAG
+- 🤖 Leverages Cohere API to answer user queries via RAG
 - 🧪 Semantic search powered by text embeddings and grouped prompt tasks
 - 🔄 Easily extendable to other podcasts or long-form audio content
 
@@ -21,7 +21,7 @@ his podcast, that answers questions based on what he has said said in his podcas
 
 - **Python**
 - **Weaviate** – vector store for transcript embeddings
-- **Cohere** – for LLM-powered question answering
+- **Cohere** – for RAG-powered question answering
 - **YouTubeTranscriptAPI / pytube** – for pulling transcripts or audio
 
 ---
@@ -42,8 +42,4 @@ his podcast, that answers questions based on what he has said said in his podcas
    - The system performs a similarity search using Weaviate  
    - The top relevant chunks are passed into a prompt  
    - Cohere generates a grounded answer based only on those chunks
-
----
-
-## 📂 Folder Structure
 
